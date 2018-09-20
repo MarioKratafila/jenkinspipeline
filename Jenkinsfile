@@ -6,8 +6,8 @@ pipeline {
     }
     
     parameters { 
-         string(name: 'tomcat', defaultValue: 'localhost:9090', description: 'Staging Server')
-         string(name: 'tomcat', defaultValue: 'localhost:8081', description: 'Production Server')
+         string(name: 'tomcat', defaultValue: '127.0.0.1:9090', description: 'Staging Server')
+         string(name: 'tomcat', defaultValue: '127.0.0.1:8081', description: 'Production Server')
     } 
 
     triggers {
